@@ -16,20 +16,22 @@ class DiceElement extends PolymerElement {
     super.enteredView();
     
     this.changes.listen((records) {
-      // There are numerous changes
+      // There are numerous changes so only pick ones we want.
       bool regenerateDice = false;
+      
       for(var change in records) {
         if(change.name.toString() == "Symbol(\"count\")"
            || change.name.toString() == "Symbol(\"sides\")") 
           regenerateDice = true; 
       }
+      
       if(regenerateDice)
         dice = new Dice(count);
     });
-   
-    // Create the dice elements
-    //dice = new Dice(count);
   }
   
+  void roll() {
+    dice.forEach((d) => d.roll());
+  }
  
 }

@@ -1,4 +1,5 @@
 import "package:polymer/polymer.dart";
+import "dart:html";
 //import "../components/dice.dart";
 
 @CustomTag("dice-app")
@@ -18,12 +19,9 @@ class DiceApp extends PolymerElement {
   
   DiceApp.created(): super.created();
   
-  @override
-  void enteredView() {
-    
-  }
-  
-  void roll(Event e, var detail, Node target) {
-    
+  void roll(MouseEvent e, var detail, Node target) {
+    // Need to tell all the dice to roll.
+    dispatchEvent(new CustomEvent('rolldice'));
+    ///fire("roll");
   }
 }

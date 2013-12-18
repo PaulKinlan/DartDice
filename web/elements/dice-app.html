@@ -12,9 +12,7 @@
   </style>
   <template>
     <label for="spinner">Number of Dice</label><input type="number" value="{{count}}" id="spinner">
-    <p>{{countAsInt}}</p>
     <label for="sides">Number of Sides</label><input type="number" value="{{sides}}" id="sides">
-    <p>{{sidesAsInt}}</p>
     <dice-element count={{countAsInt}} sides={{sidesAsInt}}></dice-element>
     <button on-click="{{roll}}">Roll</button>
   </template>

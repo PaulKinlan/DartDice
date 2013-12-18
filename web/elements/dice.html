@@ -12,7 +12,7 @@
   </style>
   <template>
     <template repeat="{{die in dice}}">
-      <die-element sides={{die.sides}}></die-element>
+      <die-element sides={{die.sides}} on-rolldice="{{roll}}"></die-element>
     </template>
   </template>
   <script type="application/dart" src="dice.dart"></script>
