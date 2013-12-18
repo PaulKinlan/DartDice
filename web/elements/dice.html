@@ -1,0 +1,19 @@
+<polymer-element name="dice-element">
+   <style>
+      @host {
+        :scope {
+          background-color: LemonChiffon;
+          text-align: center;
+          display: inline-block;
+          border: solid 1px;
+          padding: 10px 10px 10px 10px;
+        }
+      }
+  </style>
+  <template>
+    <template repeat="{{die in dice}}">
+      <die-element sides={{die.sides}}></die-element>
+    </template>
+  </template>
+  <script type="application/dart" src="dice.dart"></script>
+</polymer-element>

@@ -1,0 +1,12 @@
+name: Dices
+author: Paul Kinlan
+description: A sample web application
+dependencies:
+  browser: any
+  polymer: any
+  unittest: any
+  
+transformers:
+- polymer:
+  entry_points: web/index.html
+  

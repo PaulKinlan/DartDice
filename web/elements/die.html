@@ -1,0 +1,17 @@
+<polymer-element name="die-element">
+   <style>
+      @host {
+        :scope {
+          background-color: LemonChiffon;
+          text-align: center;
+          display: inline-block;
+          border: solid 1px;
+          padding: 10px 10px 10px 10px;
+        }
+      }
+  </style>
+  <template>
+    <div on-click="{{roll}}">{{value}}</div>
+  </template>
+  <script type="application/dart" src="die.dart"></script>
+</polymer-element>
