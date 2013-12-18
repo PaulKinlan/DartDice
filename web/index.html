@@ -5,6 +5,7 @@
     <title>Dice</title>
     <link rel="import" href="elements/die.html">
     <link rel="import" href="elements/dice.html">
+    <link rel="import" href="elements/dice-app.html">
     <script type="application/dart">export 'package:polymer/init.dart';</script>
      
     <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
@@ -12,10 +13,9 @@
   </head>
   <body>   
     <h1>Dice</h1>
-    <dice-element count=5></dice-element>
+    <dice-app></dice-app>
     
-    <h1>Dies</h1>
-    <die-element value=1></die-element>
-    <die-element value=1></die-element>
+    <dice-element count=2></dice-element>
+    
   </body>
 </html>
